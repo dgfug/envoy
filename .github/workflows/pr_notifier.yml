@@ -5,6 +5,8 @@ on:
 
 jobs:
   pr_notifier:
+    permissions:
+      contents: read
     name: PR Notifier
     runs-on: ubuntu-latest
     if: github.repository_owner == 'envoyproxy'
