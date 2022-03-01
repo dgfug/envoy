@@ -5,6 +5,9 @@ on:
 
 jobs:
   prune_stale:
+    permissions:
+      issues: write
+      pull-requests: write
     name: Prune Stale
     runs-on: ubuntu-latest
 
